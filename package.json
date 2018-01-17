@@ -1,15 +1,15 @@
 {
   "name": "emcsec-desktop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Aspanta Limited",
   "description": "Emercoin Secure Wallet",
-  "license": null,
+  "license": "GPLv3",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
     "build:dir": "node .electron-vue/build.js && electron-builder --dir",
     "build:all": "node .electron-vue/build.js && electron-builder -mwl",
-    "build:win32": "node .electron-vue/build.js && electron-builder --x64",
+    "build:win32": "node .electron-vue/build.js && electron-builder --win --x64 --ia32",
     "build:linux": "node .electron-vue/build.js && electron-builder --linux",
     "build:mac": "node .electron-vue/build.js && electron-builder --mac --prepackaged build",
     "build:clean": "cross-env BUILD_TARGET=clean node .electron-vue/build.js",
@@ -33,7 +33,7 @@
     ],
     "mac": {
       "icon": "build/icons/icon.icns",
-      "target": "pkg",
+      "target": "zip",
       "artifactName": "EmcSec-${version}-MacOS.${ext}"
     },
     "win": {
