@@ -174,13 +174,13 @@
                   if (res === null) {
                     _this.$store.dispatch('setSettings', {
                       emc: {
-                        host: 'emcx.emercoin.com',
+                        host: 'emcx.emercoin.net',
                         port: 9110,
                         ssl: false,
                         change: _this.Keys.emc.changes[0].address
                       },
                       btc: {
-                        host: 'btcx.emercoin.com',
+                        host: 'btcx.emercoin.net',
                         port: 50001,
                         ssl: false,
                         change: _this.Keys.btc.changes[0].address

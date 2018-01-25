@@ -5,12 +5,12 @@ let app = electron.remote.app
 
 const state = {
   emc: {
-    host: 'emcx.emercoin.com',
+    host: 'emcx.emercoin.net',
     port: 9110,
     change: ''
   },
   btc: {
-    host: 'btcx.emercoin.com',
+    host: 'btcx.emercoin.net',
     port: 50001,
     change: ''
   },
